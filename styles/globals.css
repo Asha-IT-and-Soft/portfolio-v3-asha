@@ -1477,6 +1477,11 @@ a.inline-link:active::after {
 .resume-button::after {
   display: none !important;
 }
+.textLayer {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+}
 
 /* --------- */
 /* Socials and Email */

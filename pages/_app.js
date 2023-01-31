@@ -57,8 +57,6 @@ export default function App({ Component, pageProps }) {
         }
       }, 0);
     }
-
-    // handleExternalLinks();
   }, [load]);
 
   return (
