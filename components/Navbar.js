@@ -97,7 +97,7 @@ function NavBar() {
                 href="#home"
               >
                 <Navbar.Brand className="d-flex">
-                  <Image height={35} width="auto" src={logo} />
+                  <Image height={35} width="auto" alt="Logo" src={logo} />
                 </Navbar.Brand>
               </Nav.Link>
             </CSSTransition>
@@ -148,8 +148,9 @@ function NavBar() {
                     className="d-flex align-items-center justify-content-center"
                   >
                     <Nav.Link
-                      as={Link}
-                      href="/resume"
+                      // as={Link}
+                      target="_blank"
+                      href="https://drive.google.com/file/d/1NnclBKhiJPAIeahRA7CabA4o67Q2J7p6/view"
                       className="resume-button"
                     >
                       Resume

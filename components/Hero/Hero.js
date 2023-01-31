@@ -69,55 +69,44 @@ function Hero() {
         <Container className="home-content padding-container">
           <Row>
             <Col md={8} className="home-header">
-              {
-                <TransitionGroup component={null}>
-                  {isMounted &&
-                    items.map(({ component, nodeRef }, i) => (
-                      <CSSTransition
-                        key={i}
-                        nodeRef={nodeRef}
-                        classNames="fadeup"
-                        timeout={2000}
-                      >
-                        <div
-                          ref={nodeRef}
-                          style={{ transitionDelay: `${i + 1}00ms` }}
-                        >
-                          {component}
-                        </div>
-                      </CSSTransition>
-                    ))}
-                </TransitionGroup>
-              }
-            </Col>
-
-            <Col md={4} style={{ paddingBottom: 20 }}>
-              {
-                <TransitionGroup component={null}>
-                  {isMounted && (
+              <TransitionGroup component={null}>
+                {isMounted &&
+                  items.map(({ component, nodeRef }, i) => (
                     <CSSTransition
-                      // nodeRef={imgRef}
+                      key={i}
+                      nodeRef={nodeRef}
                       classNames="fadeup"
                       timeout={2000}
                     >
-                      <Image
-                        // ref={imgRef}
-                        src={homeLogo}
-                        alt="home pic"
-                        className="img-fluid"
-                        style={{ maxHeight: "450px", transitionDelay: `100ms` }}
-                      />
+                      <div
+                        ref={nodeRef}
+                        style={{ transitionDelay: `${i + 1}00ms` }}
+                      >
+                        {component}
+                      </div>
                     </CSSTransition>
-                  )}
-                </TransitionGroup>
-              }
+                  ))}
+              </TransitionGroup>
+            </Col>
 
-              {/* <Image
-                src={homeLogo}
-                alt="home pic"
-                className="img-fluid"
-                style={{ maxHeight: "450px" }}
-              /> */}
+            <Col md={4} style={{ paddingBottom: 20 }}>
+              <TransitionGroup component={null}>
+                {isMounted && (
+                  <CSSTransition
+                    nodeRef={imgRef}
+                    classNames="fadeup"
+                    timeout={2000}
+                  >
+                    <Image
+                      src={homeLogo}
+                      alt="home pic"
+                      className="img-fluid"
+                      style={{ maxHeight: "450px", transitionDelay: `100ms` }}
+                      ref={imgRef}
+                    />
+                  </CSSTransition>
+                )}
+              </TransitionGroup>
             </Col>
           </Row>
         </Container>

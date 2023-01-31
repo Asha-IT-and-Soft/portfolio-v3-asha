@@ -20,6 +20,17 @@ export default function App({ Component, pageProps }) {
 
     return () => clearTimeout(timer);
   }, []);
+
+  const handleG = () => {
+    const allG = document.querySelectorAll("g");
+    if (allG.length > 0) {
+      allG.forEach((link) => {
+        link.removeAttribute("dataName");
+        link.setAttribute("dataname", "Folder On");
+      });
+    }
+  };
+
   const handleExternalLinks = () => {
     const allLinks = Array.from(document.querySelectorAll("a"));
     if (allLinks.length > 0) {

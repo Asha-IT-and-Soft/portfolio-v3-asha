@@ -2,6 +2,7 @@ import { srConfig } from "@/utils";
 import React, { useEffect, useRef, useState } from "react";
 import { FiExternalLink, FiFolder, FiGithub } from "react-icons/fi";
 import { CiFolderOn } from "react-icons/ci";
+import { HiOutlineFolder } from "react-icons/hi";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const OtherProjects = () => {
@@ -61,8 +62,9 @@ const OtherProjects = () => {
         <header>
           <div className="project-top">
             <div className="folder">
-              {/* <FiFolder /> */}
               <CiFolderOn />
+              {/* <FiFolder /> */}
+              {/* <HiOutlineFolder /> */}
             </div>
             <div className="project-links">
               {githubFront && (

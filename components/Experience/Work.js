@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, createRef } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import styled from "styled-components";
 import { CSSTransition } from "react-transition-group";
@@ -20,6 +20,7 @@ const Work = () => {
         "Built and shipped the Apple Music Extension within Facebook Messenger leveraging third-party and ",
         "Architected and implemented the front-end of Apple Music's embeddable web player widget, which lets users log in and listen to full songs in the browser",
       ],
+      nodeRef: createRef(null),
     },
     {
       date: "2017-12-21",
@@ -33,6 +34,7 @@ const Work = () => {
         "Built and shipped the Apple Music Extension within Facebook Messenger leveraging third-party and ",
         "Architected and implemented the front-end of Apple Music's embeddable web player widget, which lets users log in and listen to full songs in the browser",
       ],
+      nodeRef: createRef(null),
     },
     {
       date: "2017-12-21",
@@ -46,6 +48,7 @@ const Work = () => {
         "Built and shipped the Apple Music Extension within Facebook Messenger leveraging third-party and ",
         "Architected and implemented the front-end of Apple Music's embeddable web player widget, which lets users log in and listen to full songs in the browser",
       ],
+      nodeRef: createRef(null),
     },
   ];
 
@@ -84,8 +87,6 @@ const Work = () => {
   // Only re-run the effect if tabFocus changes
   useEffect(() => focusTab(), [tabFocus]);
 
-  console.log(activeTabId);
-
   return (
     <Container id="work" className="padding-container">
       <Row className="padding-container align-items-center justify-content-center">
@@ -107,7 +108,7 @@ const Work = () => {
                       <button
                         className="tab-button"
                         key={i}
-                        isActive={activeTabId === i}
+                        isactive={(activeTabId === i).toString()}
                         onClick={() => setActiveTabId(i)}
                         ref={(el) => (tabs.current[i] = el)}
                         id={`tab-${i}`}
@@ -127,7 +128,7 @@ const Work = () => {
                   calc(${activeTabId} * var(--tab-height))
                   )`,
                   }}
-                  activeTabId={activeTabId}
+                  activetabid={activeTabId}
                 />
                 <div
                   className="highlight-mobile"
@@ -136,50 +137,54 @@ const Work = () => {
                   calc(${activeTabId} * var(--tab-width))
                   )`,
                   }}
-                  activeTabId={activeTabId}
+                  activetabid={activeTabId}
                 />
               </div>
 
               <div className="panels">
                 {jobsData &&
-                  jobsData.map(({ title, url, company, range, des }, i) => {
-                    return (
-                      <CSSTransition
-                        key={i}
-                        in={activeTabId === i}
-                        timeout={250}
-                        classNames="fade"
-                      >
-                        <div
-                          className="panel"
-                          id={i}
-                          role="tabpanel"
-                          tabIndex={activeTabId === i ? "0" : "-1"}
-                          aria-labelledby={`tab-${i}`}
-                          aria-hidden={activeTabId !== i}
-                          hidden={activeTabId !== i}
+                  jobsData.map(
+                    ({ title, url, company, range, des, nodeRef }, i) => {
+                      return (
+                        <CSSTransition
+                          key={i}
+                          in={activeTabId === i}
+                          timeout={250}
+                          classNames="fade"
+                          nodeRef={nodeRef}
                         >
-                          <h3>
-                            <span>{title}</span>
-                            <span className="company">
-                              &nbsp;@&nbsp;
-                              <a href={url} className="inline-link">
-                                {company}
-                              </a>
-                            </span>
-                          </h3>
-                          <p className="range">{range}</p>
-                          <div className="description">
-                            <ul>
-                              {des.map((item, i) => {
-                                return <li key={i}>{item}</li>;
-                              })}
-                            </ul>
+                          <div
+                            className="panel"
+                            id={i}
+                            role="tabpanel"
+                            tabIndex={activeTabId === i ? "0" : "-1"}
+                            aria-labelledby={`tab-${i}`}
+                            aria-hidden={activeTabId !== i}
+                            hidden={activeTabId !== i}
+                            ref={nodeRef}
+                          >
+                            <h3>
+                              <span>{title}</span>
+                              <span className="company">
+                                &nbsp;@&nbsp;
+                                <a href={url} className="inline-link">
+                                  {company}
+                                </a>
+                              </span>
+                            </h3>
+                            <p className="range">{range}</p>
+                            <div className="description">
+                              <ul>
+                                {des.map((item, i) => {
+                                  return <li key={i}>{item}</li>;
+                                })}
+                              </ul>
+                            </div>
                           </div>
-                        </div>
-                      </CSSTransition>
-                    );
-                  })}
+                        </CSSTransition>
+                      );
+                    }
+                  )}
               </div>
             </div>
           </section>

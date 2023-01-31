@@ -110,16 +110,16 @@ const Footer = () => {
   });
 
   useEffect(() => {
-    // fetch("https://github.com/inzamam-ul/portfolio-v3")
-    //   .then((response) => response.json())
-    //   .then((json) => {
-    //     const { stargazers_count, forks_count } = json;
-    //     setGitHubInfo({
-    //       stars: stargazers_count,
-    //       forks: forks_count,
-    //     });
-    //   })
-    //   .catch((e) => console.error(e));
+    fetch("https://api.github.com/repos/inzamam-ul/portfolio-v3")
+      .then((response) => response.json())
+      .then((json) => {
+        const { stargazers_count, forks_count } = json;
+        setGitHubInfo({
+          stars: stargazers_count,
+          forks: forks_count,
+        });
+      })
+      .catch((e) => console.error(e));
   }, []);
 
   return (
@@ -141,7 +141,7 @@ const Footer = () => {
         <a href="https://github.com/inzamam-ul/portfolio-v3">
           <div> Built with love by Inzamamul Haque</div>
 
-          {githubInfo.stars && githubInfo.forks && (
+          {githubInfo.stars && githubInfo.forks ? (
             <div className="github-stats">
               <span>
                 <FiStar />
@@ -153,6 +153,8 @@ const Footer = () => {
                 <span>{githubInfo.forks.toLocaleString()}</span>
               </span>
             </div>
+          ) : (
+            " "
           )}
         </a>
       </StyledCredit>

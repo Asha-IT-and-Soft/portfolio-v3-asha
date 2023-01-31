@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, createRef } from "react";
 import PropTypes from "prop-types";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import styled from "styled-components";
@@ -30,16 +30,17 @@ const Side = ({ children, isHome, orientation }) => {
     const timeout = setTimeout(() => setIsMounted(true), loaderDelay);
     return () => clearTimeout(timeout);
   }, []);
-
+  const sideRef = createRef(null);
   return (
     <StyledSideElement orientation={orientation}>
       <TransitionGroup component={null}>
         {isMounted && (
           <CSSTransition
+            nodeRef={sideRef}
             classNames={isHome ? "fade" : ""}
             timeout={isHome ? loaderDelay : 0}
           >
-            {children}
+            <div ref={sideRef}>{children}</div>
           </CSSTransition>
         )}
       </TransitionGroup>
