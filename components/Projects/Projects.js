@@ -10,14 +10,7 @@ const featuredProjects = [
   {
     external: "https://asha-it.web.app/",
     title: "Asha IT",
-    tech: [
-      "React",
-      "Node.js",
-      "Firebase",
-      "Mongo DB",
-      "React-Bootstrap",
-      "Stripe",
-    ],
+    tech: ["React", "express.js", "Firebase", "Mongo DB", "Stripe"],
     githubFront: "https://github.com/inzamam-ul/AshaIT-client",
     githubBack: "https://github.com/inzamam-ul/AshaIT-server",
     cover: ashaIT,
@@ -27,7 +20,7 @@ const featuredProjects = [
   {
     external: "https://mudidokan-fullstack.web.app/",
     title: "MudiDokan",
-    tech: ["JavaScript", "React", "Firebase", "Mongo DB", "React-Bootstrap"],
+    tech: ["JavaScript", "React", "Node.js", "Firebase", "Mongo DB"],
     githubFront: "https://github.com/inzamam-ul/mudidokan-client",
     githubBack: "https://github.com/inzamam-ul/mudidokan-server",
     cover: mudi,
