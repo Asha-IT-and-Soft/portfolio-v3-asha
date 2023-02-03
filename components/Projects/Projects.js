@@ -1,30 +1,38 @@
 import React, { useEffect, useRef } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ashaIT from "@/Assets/Projects/asha-it.png";
+import mudi from "@/Assets/Projects/mudi.png";
 import { srConfig } from "@/utils";
 import Image from "next/image";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 
 const featuredProjects = [
   {
-    external: "#",
+    external: "https://asha-it.web.app/",
     title: "Asha IT",
-    tech: ["React", "Node.js", "Firebase", "Mongo DB"],
-    githubFront: "#",
-    githubBack: "#",
+    tech: [
+      "React",
+      "Node.js",
+      "Firebase",
+      "Mongo DB",
+      "React-Bootstrap",
+      "Stripe",
+    ],
+    githubFront: "https://github.com/inzamam-ul/AshaIT-client",
+    githubBack: "https://github.com/inzamam-ul/AshaIT-server",
     cover: ashaIT,
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis vitae placeat cumque delectus cum modi aut, unde debitis doloribus recusandae!",
+      "It's a software company website where authenticated users can buy services and check their service status. On the Admin dashboard admin can add/delete/update any services and change order status",
   },
   {
-    external: "#",
-    title: "Asha IT",
-    tech: ["React", "Node.js", "Firebase", "Mongo DB"],
-    githubFront: "#",
-    githubBack: "#",
-    cover: ashaIT,
+    external: "https://mudidokan-fullstack.web.app/",
+    title: "MudiDokan",
+    tech: ["JavaScript", "React", "Firebase", "Mongo DB", "React-Bootstrap"],
+    githubFront: "https://github.com/inzamam-ul/mudidokan-client",
+    githubBack: "https://github.com/inzamam-ul/mudidokan-server",
+    cover: mudi,
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis vitae placeat cumque delectus cum modi aut, unde debitis doloribus recusandae!",
+      "Mudidokan.com is a online grocery shop where user can order their desired product, check order status",
   },
 ];
 

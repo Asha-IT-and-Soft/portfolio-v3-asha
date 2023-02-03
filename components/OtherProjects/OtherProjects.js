@@ -28,22 +28,29 @@ const OtherProjects = () => {
   const GRID_LIMIT = 6;
   const projects = [
     {
-      external: "#",
+      external: "https://asha-it.web.app/",
       title: "Asha IT",
-      tech: ["React", "Node.js", "Firebase", "Mongo DB"],
-      githubFront: "#",
-      githubBack: "",
+      tech: [
+        "React",
+        "Node.js",
+        "Firebase",
+        "Mongo DB",
+        "React-Bootstrap",
+        "Stripe",
+      ],
+      githubFront: "https://github.com/inzamam-ul/AshaIT-client",
+      githubBack: "https://github.com/inzamam-ul/AshaIT-server",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis vitae placeat cumque delectus cum modi aut, unde debitis doloribus recusandae!",
+        "It's a software company website where authenticated users can buy services and check their service status. On the Admin dashboard admin can add/delete/update any services and change order status",
     },
     {
-      external: "#",
-      title: "Asha IT",
-      tech: ["React", "Node.js", "Firebase", "Mongo DB"],
-      githubFront: "#",
-      githubBack: "",
+      external: "https://mudidokan-fullstack.web.app/",
+      title: "MudiDokan",
+      tech: ["JavaScript", "React", "Firebase", "Mongo DB", "React-Bootstrap"],
+      githubFront: "https://github.com/inzamam-ul/mudidokan-client",
+      githubBack: "https://github.com/inzamam-ul/mudidokan-server",
       description:
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis vitae placeat cumque delectus cum modi aut, unde debitis doloribus recusandae!",
+        "Mudidokan.com is a online grocery shop where user can order their desired product, check order status",
     },
   ];
   const firstSix = projects.slice(0, GRID_LIMIT);

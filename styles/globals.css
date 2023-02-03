@@ -105,7 +105,7 @@ button:focus {
   height: 100%;
   z-index: 999999;
   background-color: var(--navy);
-  background-image: url(../Assets/pre.gif);
+  background-image: url(/pre.gif);
   background-repeat: no-repeat;
   background-position: center;
 }
