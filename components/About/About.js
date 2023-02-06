@@ -8,9 +8,16 @@ import {
 import { FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
 import me from "@/Assets/me1.jpg";
-import { SiFirebase, SiNextdotjs } from "react-icons/si";
+import {
+  SiExpress,
+  SiFirebase,
+  SiMongodb,
+  SiMysql,
+  SiNextdotjs,
+  SiNginx,
+  SiRedux,
+} from "react-icons/si";
 import { CgCPlusPlus } from "react-icons/cg";
-import { DiMongodb } from "react-icons/di";
 import { srConfig } from "@/utils";
 
 const softwareSkills = [
@@ -39,6 +46,10 @@ const softwareSkills = [
     fontAwesomeClassname: "fab fa-react",
   },
   {
+    skillName: "redux",
+    icon: <SiRedux />,
+  },
+  {
     skillName: "next.js",
     icon: <SiNextdotjs />,
   },
@@ -47,8 +58,16 @@ const softwareSkills = [
     fontAwesomeClassname: "fab fa-node",
   },
   {
+    skillName: "express.js",
+    icon: <SiExpress />,
+  },
+  {
     skillName: "mongo db",
-    icon: <DiMongodb />,
+    icon: <SiMongodb />,
+  },
+  {
+    skillName: "mysql",
+    icon: <SiMysql />,
   },
   {
     skillName: "firebase",
@@ -66,6 +85,10 @@ const softwareSkills = [
   {
     skillName: "linux",
     fontAwesomeClassname: "fab fa-linux",
+  },
+  {
+    skillName: "nginx",
+    icon: <SiNginx />,
   },
 ];
 function About() {
