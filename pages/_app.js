@@ -8,6 +8,7 @@ import Footer from "@/components/Footer/Footer";
 import Social from "@/components/social";
 import Email from "@/components/email";
 import { useRouter } from "next/router";
+import Head from "next/head";
 
 export default function App({ Component, pageProps }) {
   const [load, upadateLoad] = useState(true);
