@@ -1,9 +1,10 @@
-import React, { useEffect, useRef } from "react";
-import { Container, Row, Col } from "react-bootstrap";
 import ashaIT from "@/Assets/Projects/asha-it.png";
 import mudi from "@/Assets/Projects/mudi.png";
+import todo from "@/Assets/Projects/todo.png";
 import { srConfig } from "@/utils";
 import Image from "next/image";
+import { useEffect, useRef } from "react";
+import { Container, Row } from "react-bootstrap";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 
 const featuredProjects = [
@@ -26,6 +27,16 @@ const featuredProjects = [
     cover: mudi,
     description:
       "Mudidokan.com is a online grocery shop where user can order their desired product, check order status",
+  },
+  {
+    external: "https://react-redux-simple-todo.netlify.app/",
+    title: "Simple Todo",
+    tech: ["JavaScript", "React", "Redux", "React-redux", "Tailwind CSS"],
+    githubFront: "https://github.com/inzamam-ul/redux-react-simple-todo",
+    githubBack: "https://github.com/inzamam-ul/redux-react-simple-todo",
+    cover: todo,
+    description:
+      "It's a simple todo app where user can add,delete and update their todo list and also can filter their todo list. User can mark priority of their todo list",
   },
 ];
 
@@ -125,6 +136,7 @@ function Projects() {
                           width="auto"
                           alt={title}
                           className="img"
+                          placeholder="blur"
                         />
                       </a>
                     </div>

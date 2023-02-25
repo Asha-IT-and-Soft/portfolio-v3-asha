@@ -1,8 +1,7 @@
 import { srConfig } from "@/utils";
-import React, { useEffect, useRef, useState } from "react";
-import { FiExternalLink, FiFolder, FiGithub } from "react-icons/fi";
+import { useEffect, useRef, useState } from "react";
 import { CiFolderOn } from "react-icons/ci";
-import { HiOutlineFolder } from "react-icons/hi";
+import { FiExternalLink, FiGithub } from "react-icons/fi";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 const OtherProjects = () => {
@@ -44,6 +43,15 @@ const OtherProjects = () => {
       githubBack: "https://github.com/inzamam-ul/mudidokan-server",
       description:
         "Mudidokan.com is a online grocery shop where user can order their desired product, check order status",
+    },
+    {
+      external: "https://react-redux-simple-todo.netlify.app/",
+      title: "Simple Todo",
+      tech: ["JavaScript", "React", "Redux", "React-redux", "Tailwind CSS"],
+      githubFront: "https://github.com/inzamam-ul/redux-react-simple-todo",
+      githubBack: "https://github.com/inzamam-ul/redux-react-simple-todo",
+      description:
+        "It's a simple todo app where user can add,delete and update their todo list and also can filter their todo list. User can mark priority of their todo list",
     },
   ];
   const firstSix = projects.slice(0, GRID_LIMIT);
