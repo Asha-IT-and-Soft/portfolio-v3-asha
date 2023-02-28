@@ -49,7 +49,7 @@ const OtherProjects = () => {
       title: "Simple Todo",
       tech: ["JavaScript", "React", "Redux", "React-redux", "Tailwind CSS"],
       githubFront: "https://github.com/inzamam-ul/redux-react-simple-todo",
-      githubBack: "https://github.com/inzamam-ul/redux-react-simple-todo",
+      githubBack: "https://github.com/inzamam-ul/simple-todo-json-server",
       description:
         "It's a simple todo app where user can add,delete and update their todo list and also can filter their todo list. User can mark priority of their todo list",
     },
@@ -79,7 +79,7 @@ const OtherProjects = () => {
                 <a
                   href={githubFront}
                   aria-label="GitHub Link"
-                  title="Github Link"
+                  title="Github Frontend Link"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -90,7 +90,7 @@ const OtherProjects = () => {
                 <a
                   href={githubBack}
                   aria-label="GitHub Link"
-                  title="Github Link"
+                  title="Github Backend Link"
                   target="_blank"
                   rel="noreferrer"
                 >

@@ -33,7 +33,7 @@ const featuredProjects = [
     title: "Simple Todo",
     tech: ["JavaScript", "React", "Redux", "React-redux", "Tailwind CSS"],
     githubFront: "https://github.com/inzamam-ul/redux-react-simple-todo",
-    githubBack: "https://github.com/inzamam-ul/redux-react-simple-todo",
+    githubBack: "https://github.com/inzamam-ul/simple-todo-json-server",
     cover: todo,
     description:
       "It's a simple todo app where user can add,delete and update their todo list and also can filter their todo list. User can mark priority of their todo list",
@@ -103,13 +103,19 @@ function Projects() {
 
                         <div className="project-links">
                           {githubFront && (
-                            <a href={githubFront} aria-label="GitHub Link">
+                            <a
+                              href={githubFront}
+                              aria-label="GitHub Frontend Link"
+                            >
                               <FiGithub />
                               Front End
                             </a>
                           )}
                           {githubBack && (
-                            <a href={githubBack} aria-label="GitHub Link">
+                            <a
+                              href={githubBack}
+                              aria-label="GitHub Backend Link"
+                            >
                               <FiGithub />
                               Back End
                             </a>
