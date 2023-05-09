@@ -1,4 +1,5 @@
 import ashaIT from "@/Assets/Projects/asha-it.png";
+import devfeed from "@/Assets/Projects/devfeed.png";
 import mudi from "@/Assets/Projects/mudi.png";
 import todo from "@/Assets/Projects/todo.png";
 import { srConfig } from "@/utils";
@@ -8,6 +9,15 @@ import { Container, Row } from "react-bootstrap";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
 
 const featuredProjects = [
+  {
+    external: "https://devfeed.vercel.app/",
+    title: "Asha IT",
+    tech: ["TypeScript", "React", "Next.js", "Firebase", "Recoil", "Chakra UI"],
+    githubFront: "https://github.com/inzamam-ul/devfeed",
+    cover: devfeed,
+    description:
+      "A platform designed for developers that enables them to build a community and share technology news. It allows developers to join other communities, post content, comment on others' posts, and vote on them",
+  },
   {
     external: "https://asha-it.web.app/",
     title: "Asha IT",
