@@ -11,7 +11,7 @@ import { FiExternalLink, FiGithub } from "react-icons/fi";
 const featuredProjects = [
   {
     external: "https://devfeed.vercel.app/",
-    title: "Asha IT",
+    title: "DevFeed",
     tech: ["TypeScript", "React", "Next.js", "Firebase", "Recoil", "Chakra UI"],
     githubFront: "https://github.com/inzamam-ul/devfeed",
     cover: devfeed,

@@ -9,13 +9,16 @@ import { FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
 import me from "@/Assets/me1.jpg";
 import {
+  SiDocker,
   SiExpress,
   SiFirebase,
+  SiGraphql,
   SiMongodb,
   SiMysql,
   SiNextdotjs,
   SiNginx,
   SiRedux,
+  SiTypescript,
 } from "react-icons/si";
 import { CgCPlusPlus } from "react-icons/cg";
 import { srConfig } from "@/utils";
@@ -32,6 +35,10 @@ const softwareSkills = [
   {
     skillName: "JavaScript",
     fontAwesomeClassname: "fab fa-js",
+  },
+  {
+    skillName: "TypeScript",
+    icon: <SiTypescript />,
   },
   {
     skillName: "python",
@@ -62,6 +69,10 @@ const softwareSkills = [
     icon: <SiExpress />,
   },
   {
+    skillName: "graphql",
+    icon: <SiGraphql />,
+  },
+  {
     skillName: "mongo db",
     icon: <SiMongodb />,
   },
@@ -89,6 +100,10 @@ const softwareSkills = [
   {
     skillName: "nginx",
     icon: <SiNginx />,
+  },
+  {
+    skillName: "docker",
+    icon: <SiDocker />,
   },
 ];
 function About() {
