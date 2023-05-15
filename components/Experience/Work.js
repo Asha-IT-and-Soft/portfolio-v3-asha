@@ -27,7 +27,7 @@ const Work = () => {
       title: "Full Stack Developer",
       company: "Prime Oman",
       location: "Freelance Project",
-      range: "January - April 2022",
+      range: "July - November 2022",
       url: "#",
       des: [
         "Developed and maintained code for the client website primarily using HTML, CSS, React, Next.js, Material UI, Node.js, express.js, mongo db",
@@ -38,10 +38,10 @@ const Work = () => {
     },
     {
       date: "2017-12-21",
-      title: "Front End Engineer",
+      title: "Front End Engineer(Part Time)",
       company: "eRMG",
       location: "Singapore(Remote)",
-      range: "July - November 2021",
+      range: "February - June 2021",
       url: "https://www.ermg.co/",
       des: [
         "Worked with a dedicated team to build a SASS webapp for RMG(Ready made garments), an ambitious startup originating from Singapore",
