@@ -9,11 +9,24 @@ const Work = () => {
 
   const jobsData = [
     {
-      date: "2017-12-21",
+      date: "2023-12-21",
+      title: "Front End Developer",
+      company: "BakeBoost",
+      location: "Remote",
+      range: "May 2023 - Present",
+      url: "https://bakeboost.com/",
+      des: [
+        "Implemented a real-time messaging system for communicating with customers using the Meta Cloud API",
+        "Created a system to create a personal e-commerce page with a custom domain for all registered user to sell their product to their end customer",
+      ],
+      nodeRef: createRef(null),
+    },
+    {
+      date: "2022-12-21",
       title: "Front End Developer",
       company: "Lively",
       location: "Freelancing Project",
-      range: "(19th November - 23th November) 2022",
+      range: "(19th November - 23rd November) 2022",
       url: "https://livelystudio.io/",
       des: [
         "Developed and shipped web applications for Lively Studio using Next.js, Prisma, Sql light",

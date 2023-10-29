@@ -7,7 +7,7 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
-import me from "@/Assets/me1.jpg";
+import me from "@/Assets/me5.jpg";
 import {
   SiDocker,
   SiExpress,
@@ -141,11 +141,23 @@ function About() {
               </span>
               <br />
               <br />
-              Fast-forward to today, and I’ve had the privilege of working at a{" "}
-              <a href="https://ermg.co/" target="_blank">
+              Fast-forward to today, and I’ve had the privilege of working at
+              some{" "}
+              <a href="https://bakeboost.com/" target="_blank">
                 start-up
               </a>{" "}
-              and a Freelancing project on Upwork.
+              and a Freelancing project on{" "}
+              <a
+                href="https://www.upwork.com/freelancers/~017fca0049ed5f42f1"
+                target="_blank"
+              >
+                Upwork
+              </a>{" "}
+              and{" "}
+              <a href="https://www.fiverr.com/designhut_" target="_blank">
+                Fiverr
+              </a>
+              .
               <br />
               <br />
               <br />

@@ -1,6 +1,8 @@
 import ashaIT from "@/Assets/Projects/asha-it.png";
 import devfeed from "@/Assets/Projects/devfeed.png";
 import mudi from "@/Assets/Projects/mudi.png";
+import live from "@/Assets/Projects/lively.png";
+import plant from "@/Assets/Projects/plant.png";
 import todo from "@/Assets/Projects/todo.png";
 import { srConfig } from "@/utils";
 import Image from "next/image";
@@ -15,6 +17,32 @@ const featuredProjects = [
     tech: ["TypeScript", "React", "Next.js", "Firebase", "Recoil", "Chakra UI"],
     githubFront: "https://github.com/inzamam-ul/devfeed",
     cover: devfeed,
+    description:
+      "A platform designed for developers that enables them to build a community and share technology news. It allows developers to join other communities, post content, comment on others' posts, and vote on them",
+  },
+  {
+    external:
+      "https://drive.google.com/file/d/1G5L93VZlug7Sq5A6riEt6qdphLLNcUWn/view?usp=sharing",
+    title: "Plant AI",
+    tech: [
+      "Javascript",
+      "React Native",
+      "Node.js",
+      "Python(Backend)",
+      "PyTorch",
+      "OpenAI",
+    ],
+    githubFront: "https://github.com/inzamam-ul/Plant-AI-FrontEnd",
+    githubBack: "https://github.com/inzamam-ul/AgroAI-server",
+    cover: plant,
+    description: "PLANT AI - A Plant Disease Detection App with AI Chatbot",
+  },
+  {
+    external: "https://livelystudio.io/",
+    title: "Lively",
+    tech: ["TypeScript", "React", "Next.js", "Bootstrap", "Prisma", "mysql"],
+    githubFront: "https://github.com/inzamam-ul/",
+    cover: live,
     description:
       "A platform designed for developers that enables them to build a community and share technology news. It allows developers to join other communities, post content, comment on others' posts, and vote on them",
   },
@@ -37,16 +65,6 @@ const featuredProjects = [
     cover: mudi,
     description:
       "Mudidokan.com is a online grocery shop where user can order their desired product, check order status",
-  },
-  {
-    external: "https://react-redux-simple-todo.netlify.app/",
-    title: "Simple Todo",
-    tech: ["JavaScript", "React", "Redux", "React-redux", "Tailwind CSS"],
-    githubFront: "https://github.com/inzamam-ul/redux-react-simple-todo",
-    githubBack: "https://github.com/inzamam-ul/simple-todo-json-server",
-    cover: todo,
-    description:
-      "It's a simple todo app where user can add,delete and update their todo list and also can filter their todo list. User can mark priority of their todo list",
   },
 ];
 

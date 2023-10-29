@@ -150,7 +150,7 @@ function NavBar() {
                     <Nav.Link
                       // as={Link}
                       target="_blank"
-                      href="https://drive.google.com/file/d/1NnclBKhiJPAIeahRA7CabA4o67Q2J7p6/view"
+                      href="https://drive.google.com/file/d/1bfFu-DUeaj1VcGqD4AqJvC-LqwqyA5jZ/view?usp=sharing"
                       className="resume-button"
                     >
                       Resume

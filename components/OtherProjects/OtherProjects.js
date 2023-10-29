@@ -27,22 +27,29 @@ const OtherProjects = () => {
   const GRID_LIMIT = 6;
   const projects = [
     {
-      external: "https://asha-it.web.app/",
-      title: "Asha IT",
-      tech: ["React", "express.js", "Firebase", "Mongo DB", "Stripe"],
-      githubFront: "https://github.com/inzamam-ul/AshaIT-client",
-      githubBack: "https://github.com/inzamam-ul/AshaIT-server",
+      external: "https://nextjs-gql-apollo-pokemon.vercel.app/",
+      title: "Next.js GraphQL Pokemon App",
+      tech: ["JavaScript", "Next.js", "Material UI", "GraphQL", "express.js"],
+      githubFront: "https://github.com/inzamam-ul/nextjs-gql-apollo-pokemon",
       description:
-        "It's a software company website where authenticated users can buy services and check their service status. On the Admin dashboard admin can add/delete/update any services and change order status",
+        "It's a Pokemon app build with Next.js, graphql and Material UI. Implemented Incremental Static Regeneration and pagination. And data caching using graphql",
     },
     {
-      external: "https://mudidokan-fullstack.web.app/",
-      title: "MudiDokan",
-      tech: ["JavaScript", "React", "Node.js", "Firebase", "Mongo DB"],
-      githubFront: "https://github.com/inzamam-ul/mudidokan-client",
-      githubBack: "https://github.com/inzamam-ul/mudidokan-server",
+      external:
+        "https://github.com/inzamam-ul/time-tracker-inmogr-react-native",
+      title: "Time tracker React Native App",
+      tech: ["JavaScript", "React Native", "Firebase", "Styled Component"],
+      githubFront:
+        "https://github.com/inzamam-ul/time-tracker-inmogr-react-native",
       description:
-        "Mudidokan.com is a online grocery shop where user can order their desired product, check order status",
+        "This project was build with React Native CLI. And used firebase as backend. It's a time tracker app which keep tracks of your time frame",
+    },
+    {
+      external: "https://github.com/inzamam-ul/OpenAI-Chatbot-Server",
+      title: "OpenAI Chatbot Server",
+      tech: ["JavaScript", "Node.js", "OpenAI", "express.js"],
+      githubBack: "https://github.com/inzamam-ul/OpenAI-Chatbot-Server",
+      description: "It's a OpenAI Chatbot backend server",
     },
     {
       external: "https://react-redux-simple-todo.netlify.app/",
