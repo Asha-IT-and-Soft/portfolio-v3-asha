@@ -36,14 +36,14 @@ const Work = () => {
     {
       date: "2022-12-21",
       title: "Front End Developer",
-      company: "Lively",
+      company: "AI Baby",
       location: "Freelancing Project",
       range: "May 2024",
       url: "https://aibabypredictor.com/",
       des: [
-        "Developed and shipped web applications for Lively Studio using Next.js, Prisma, Sql light",
-        "Built two api end point using Next.js api route to add reviews and posts",
-        "Deployed the web app on aws using EC2 linux server using NGINX",
+        "Developed and shipped web applications for AI Baby using Next.js, Flask, MongoDB",
+        "Built api endpoints in python(Flask) to handle request from user and payments",
+        "Added on page SEO and Deployed the web app on vercel",
       ],
       nodeRef: createRef(null),
     },
