@@ -10,8 +10,8 @@ const Work = () => {
   const jobsData = [
     {
       date: "2023-12-21",
-      title: "Front End Developer",
-      company: "BakeBoost",
+      title: "Assistant Software Engineer",
+      company: "SoftBD LTD",
       location: "Remote",
       range: "Feb 2024 - Present",
       url: "https://softbdltd.com/",
