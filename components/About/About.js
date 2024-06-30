@@ -15,6 +15,7 @@ import {
   SiGraphql,
   SiMongodb,
   SiMysql,
+  SiNestjs,
   SiNextdotjs,
   SiNginx,
   SiRedux,
@@ -63,6 +64,10 @@ const softwareSkills = [
   {
     skillName: "nodejs",
     fontAwesomeClassname: "fab fa-node",
+  },
+  {
+    skillName: "nestjs",
+    icon: <SiNestjs />,
   },
   {
     skillName: "express.js",
