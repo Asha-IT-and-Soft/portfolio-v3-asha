@@ -6,7 +6,7 @@ export const hex2rgba = (hex, alpha = 1) => {
 export const navDelay = 1000;
 export const loaderDelay = 2000;
 
-export const email = "inzamam.cu@gmail.com";
+export const email = "ilmarahman.du@gmail.com";
 
 export const srConfig = (delay = 200, viewFactor = 0.25) => ({
   origin: "bottom",

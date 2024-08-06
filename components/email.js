@@ -37,7 +37,7 @@ const StyledLinkWrapper = styled.div`
 `;
 
 const Email = ({ isHome }) => {
-  const email = "inzamam.cu@gmail.com";
+  const email = "ilmarahman.du@gmail.com";
   return (
     <Side isHome={isHome} orientation="right">
       <div className="email">

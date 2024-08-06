@@ -139,7 +139,7 @@ const Footer = () => {
 
       <StyledCredit tabindex="-1">
         <a href="https://github.com/inzamam-ul/portfolio-v3">
-          <div> Built with love by Inzamamul Haque</div>
+          <div> Built with love by Ilma Rahman</div>
 
           {githubInfo.stars && githubInfo.forks ? (
             <div className="github-stats">

@@ -19,7 +19,7 @@ function Hero() {
   const one = <h5 className="heading">Hi,&nbsp;my name is</h5>;
   const two = (
     <h1 className="heading-name">
-      <div className="main-name"> Inzamamul Haque</div>
+      <div className="main-name"> Ilma Rahman</div>
       <Type />
     </h1>
   );

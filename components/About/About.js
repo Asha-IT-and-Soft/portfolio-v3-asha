@@ -7,7 +7,7 @@ import {
 } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
-import me from "@/Assets/me5.jpg";
+import me from "@/Assets/me.jpeg";
 import {
   SiDocker,
   SiExpress,
@@ -137,7 +137,7 @@ function About() {
         <Row ref={revealContainer} className="about-row">
           <Col md={8} className="home-about-description">
             <p className="home-about-body">
-              Hello! My name is Inzamamul Haque and I enjoy creating things that
+              Hello! My name is Ilma Rahman and I enjoy creating things that
               live on the internet. I started my web development journey back in
               2021 at my 5th semester when I decided to learn something beyond
               my university curriculum. My decision taught me a lot about{" "}
@@ -159,7 +159,7 @@ function About() {
                 Upwork
               </a>{" "}
               and{" "}
-              <a href="https://www.fiverr.com/designhut_" target="_blank">
+              <a href="https://www.fiverr.com/CodeingNinja" target="_blank">
                 Fiverr
               </a>
               .

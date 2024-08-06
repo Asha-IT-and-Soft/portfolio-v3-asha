@@ -2,19 +2,8 @@ import React, { useEffect, useRef, useState } from "react";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
-import logo from "../Assets/logo8.png";
-import Button from "react-bootstrap/Button";
-import Link from "next/link";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
-import {
-  AiFillStar,
-  AiOutlineHome,
-  AiOutlineFundProjectionScreen,
-  AiOutlineUser,
-} from "react-icons/ai";
+import logo from "../Assets/logo9.png";
 
-import { CgFileDocument } from "react-icons/cg";
 import Image from "next/image";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
